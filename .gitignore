@@ -1,0 +1,7 @@
+node_modules/
+evidence/recordings/*.mp4
+evidence/recordings/*.webm
+evidence/screenshots/*.png
+evidence/appium-server.log
+*.log
+.DS_Store
