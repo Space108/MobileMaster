@@ -82,3 +82,14 @@ npm install
 **iPhone:** `IOS_APP_PATH`, `IOS_DEVICE_NAME` (как в Simulator), `IOS_PLATFORM_VERSION`, `IOS_BUNDLE_ID`, `IOS_UDID` (реальное устройство), при необходимости `IOS_XCODE_ORG_ID`, `IOS_XCODE_SIGNING_ID`
 
 Подробности — комментарии в **`wdio.conf.ts`**.
+
+## Публикация на GitHub
+
+Репозиторий уже можно инициализировать локально (ветка `main`, первый коммит с кодом и **`evidence/demo/`** — пример видео и двух скринов). Дальше на [github.com](https://github.com/new) создайте пустой репозиторий **без** README и выполните:
+
+```bash
+git remote add origin https://github.com/<ваш-логин>/MobileMaster.git
+git push -u origin main
+```
+
+(При необходимости замените URL на SSH: `git@github.com:<логин>/MobileMaster.git`.)
