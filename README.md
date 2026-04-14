@@ -13,6 +13,18 @@
 
 **Разработчик проекта: [Space108] — AI Developer & AI Full-stack Quality**
 
+## Скриншоты
+
+Примеры того, как в проекте фиксируются артефакты прогона (папка `evidence/screenshots/` после тестов; здесь — иллюстрация для README):
+
+<p align="center">
+  <img src="evidence/demo/readme-screen-1.png" alt="Пример скриншота MobileMaster — evidence 01" width="48%" />
+  &nbsp;
+  <img src="evidence/demo/readme-screen-2.png" alt="Пример скриншота MobileMaster — evidence 02" width="48%" />
+</p>
+
+Файлы: [`readme-screen-1.png`](evidence/demo/readme-screen-1.png), [`readme-screen-2.png`](evidence/demo/readme-screen-2.png).
+
 ## Android и iPhone — что нужно
 
 | | **Android** | **iPhone (iOS)** |
@@ -54,15 +66,9 @@ npm install
 - **`evidence/recordings/`** — видео после **каждого** теста (хуки `beforeTest` / `afterTest` в `wdio.conf.ts`).
 - **`evidence/screenshots/`** — PNG после **каждого** теста (тот же `afterTest`); отдельно можно вызывать `saveEvidenceScreenshot` из `src/evidence/screenshots.ts`.
 - **`evidence/appium-server.log`** — лог Appium.
-- **`evidence/demo/`** — примеры видео и скринов в репозитории (см. ниже и [`evidence/demo/README.md`](evidence/demo/README.md)).
+- **`evidence/demo/`** — демо для репозитория: скрины для README (`readme-screen-*.png`), миниатюры `demo-after-test-*.png`, видео [`demo-recording-sample.mp4`](evidence/demo/demo-recording-sample.mp4) ([raw](https://raw.githubusercontent.com/Space108/MobileMaster/main/evidence/demo/demo-recording-sample.mp4)); подробнее — [`evidence/demo/README.md`](evidence/demo/README.md).
 
-**Предпросмотр демо-артефактов** (как на [странице репозитория](https://github.com/Space108/MobileMaster) после `git push`):
-
-| Пример скрина 1 | Пример скрина 2 |
-|:---------------:|:---------------:|
-| ![Пример скриншота после теста 1](evidence/demo/demo-after-test-1.png) | ![Пример скриншота после теста 2](evidence/demo/demo-after-test-2.png) |
-
-**Пример видео** (запись экрана, иллюстрация формата `evidence/recordings/`): [открыть `demo-recording-sample.mp4`](evidence/demo/demo-recording-sample.mp4) в браузере на GitHub или [raw-файл](https://raw.githubusercontent.com/Space108/MobileMaster/main/evidence/demo/demo-recording-sample.mp4).
+Крупные скриншоты для главной страницы репозитория — в разделе **«Скриншоты»** выше.
 
 ### 5. Тесты (кроссплатформенные)
 
