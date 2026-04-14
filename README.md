@@ -54,7 +54,15 @@ npm install
 - **`evidence/recordings/`** — видео после **каждого** теста (хуки `beforeTest` / `afterTest` в `wdio.conf.ts`).
 - **`evidence/screenshots/`** — PNG после **каждого** теста (тот же `afterTest`); отдельно можно вызывать `saveEvidenceScreenshot` из `src/evidence/screenshots.ts`.
 - **`evidence/appium-server.log`** — лог Appium.
-- **`evidence/demo/`** — примеры видео и скринов для репозитория (иллюстрация; см. `evidence/demo/README.md`).
+- **`evidence/demo/`** — примеры видео и скринов в репозитории (см. ниже и [`evidence/demo/README.md`](evidence/demo/README.md)).
+
+**Предпросмотр демо-артефактов** (как на [странице репозитория](https://github.com/Space108/MobileMaster) после `git push`):
+
+| Пример скрина 1 | Пример скрина 2 |
+|:---------------:|:---------------:|
+| ![Пример скриншота после теста 1](evidence/demo/demo-after-test-1.png) | ![Пример скриншота после теста 2](evidence/demo/demo-after-test-2.png) |
+
+**Пример видео** (запись экрана, иллюстрация формата `evidence/recordings/`): [открыть `demo-recording-sample.mp4`](evidence/demo/demo-recording-sample.mp4) в браузере на GitHub или [raw-файл](https://raw.githubusercontent.com/Space108/MobileMaster/main/evidence/demo/demo-recording-sample.mp4).
 
 ### 5. Тесты (кроссплатформенные)
 
@@ -85,11 +93,15 @@ npm install
 
 ## Публикация на GitHub
 
-Репозиторий уже можно инициализировать локально (ветка `main`, первый коммит с кодом и **`evidence/demo/`** — пример видео и двух скринов). Дальше на [github.com](https://github.com/new) создайте пустой репозиторий **без** README и выполните:
+Репозиторий: **[github.com/Space108/MobileMaster](https://github.com/Space108/MobileMaster)**.
+
+Если меняли файлы локально, отправьте коммит:
 
 ```bash
-git remote add origin https://github.com/<ваш-логин>/MobileMaster.git
-git push -u origin main
+git remote add origin https://github.com/Space108/MobileMaster.git
+# если origin уже есть:
+# git remote set-url origin https://github.com/Space108/MobileMaster.git
+git add -A && git commit -m "chore: evidence/demo + README preview" && git push -u origin main
 ```
 
-(При необходимости замените URL на SSH: `git@github.com:<логин>/MobileMaster.git`.)
+(SSH: `git@github.com:Space108/MobileMaster.git`.)
